@@ -30,6 +30,8 @@ $f(n)\in o(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) \leq c g(
 The little-o definition, says that all elements need to be a positive constant and the big-O definition says that at least one eleement
 should be a positive constant. This would imply that if all conditions are met for the little-o definition, then the big-O definition would also be true because there is guaranteed to have at least one positive constant given that little-o requires all parts to be a positive constant.
 
+The inequalities of the relationship between the $f(x)$ and $g(x)$ are another difference. In the little-o definition $f(n) < c g(n)$ and in the big-O definition $f(n) \leq c g(n)$. This implies that the asymptotic time of $f(x)$ will always be less than the time of $g(x)$ in little-o. Since $f(x)$ will always be less than or equal to $g(x)$ in big-O, little-o will always imply big-O because it is a subset of big-O.
+
 I used Zach's repository https://github.com/COSC3020/little-o-proof-ZachRenz to find the definition of big-O notation.
 
 
